@@ -1,0 +1,30 @@
+$whiteText: #FFF;
+$evenRowBg: #FFF;
+$oddRowBg: #F8F6FF;
+$highlightedRowBg: #C0C6F2;
+$headerBg: #6c7ae0;
+
+.ag-theme-balham {
+  .ag-header {
+    background-color: $headerBg;
+    color: $whiteText;
+  }
+
+  .ag-row {
+    background-color: $evenRowBg;
+
+    &-odd {
+      background-color: $oddRowBg;
+    }
+
+    &-hover {
+      background-color: $highlightedRowBg;
+    }
+  }
+
+  .ag-icon {
+    &:before {
+      color: $whiteText;
+    }
+  }
+}
